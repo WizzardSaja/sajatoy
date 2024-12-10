@@ -16,7 +16,7 @@ public class KineticSculpture : MonoBehaviour
     {
         foreach (Transform child in transform)
         {
-            float offset = child.GetSiblingIndex() * 0.5f; 
+            float offset = child.GetSiblingIndex() * 0.5f;
             child.position = new Vector3(
                 child.position.x,
                 Mathf.Sin(Time.time * speed + offset) * height,
